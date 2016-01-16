@@ -1,21 +1,10 @@
-//Create access to the http library module
-var http = require('http');
+var express = require('express');
+var app = express();
 
-//Use the http library module to create server
-var server = http.createServer(
+app.set('port', (process.env.PORT || 5000));
 
-    //Create callback function
-    //This will run in response to the website being visited
-    function(req, res) {
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
 
-        //Attach a status code to the header of the response
-        //200 == "OK"
-        res.writeHead(200);
-        //Send a text-based response to display on screen
-        res.end('Node is Awesome!');
-    }
 
-);
-
-//Tell the server where it should expect to receive requests from
-server.listen(3000);

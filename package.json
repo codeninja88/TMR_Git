@@ -1,22 +1,27 @@
 {
-  "name": "tmr2016",
-  "version": "1.0.0",
-  "description": "2016 version of The Matrix Recoded website",
+  "name": "thematrixrecoded",
+  "version": "0.0.1",
+  "description": "The Matrix Recoded version created 2016",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
+  "dependencies": {
+    "express": "4.13.3"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codeninja88/TMR_git.git"
+    "url": "https://github.com/codeninja88/TMR_git.git"
   },
   "keywords": [
-    "tmr"
+    "node",
+    "heroku",
+    "express",
+      "tmr",
+      "thematrixrecoded"
   ],
-  "author": "MediaTech",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/codeninja88/TMR_git/issues"
-  },
-  "homepage": "https://github.com/codeninja88/TMR_git#readme"
+  "license": "MIT"
 }
