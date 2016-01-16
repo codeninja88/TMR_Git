@@ -1,0 +1,22 @@
+{
+  "name": "tmr2016",
+  "version": "1.0.0",
+  "description": "2016 version of The Matrix Recoded website",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeninja88/TMR_git.git"
+  },
+  "keywords": [
+    "tmr"
+  ],
+  "author": "MediaTech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeninja88/TMR_git/issues"
+  },
+  "homepage": "https://github.com/codeninja88/TMR_git#readme"
+}
