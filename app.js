@@ -20,8 +20,8 @@ app.use(session(
 
 /*__________________________________________________*/
 //route files stored in ROUTES directory
-var indexRoute = require('./routes/index');
-app.use('/', indexRoute);
+var loginRoute = require('./routes/login');
+app.use('/', loginRoute);
 
 var blogRoute = require('./routes/blog');
 app.use('/blog', blogRoute);
