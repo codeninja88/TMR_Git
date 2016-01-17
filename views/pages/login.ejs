@@ -8,23 +8,24 @@
 <body>
 
     <h1>The Matrix Recoded : LOGIN PAGE</h1>
-    <h2>Login</h2>
-    <form method="post">
-
-        <div id="loginFormDIV">
-            <label for="username">Email:</label>
-            <input type="text" id="username" name="username" placeholder="example@email.com" required />
-            <br />
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" />
-            <br />
-
-        </div>
-        <input type="submit" name="login" value="Login" />
-
-
-    </form>
+    <div id="login">
+        <form method="post">
+        <h2>Login</h2>
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" name="username" required="required" placeholder="Username" />
+                        <input type="password" name="password" required="required" placeholder="Password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
 
     <hr />
 

@@ -11,7 +11,8 @@ loginRoute.get('/', function(req, res) {
 
 loginRoute.post('/', function(req, res) {
 
-    if (req.username === 'test') {
+    if (req.body.username == 'test') {
+        req.session.username = req.body.username;
         res.render('pages/index');
     } else {
         res.render('pages/blog');
