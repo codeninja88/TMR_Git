@@ -1,18 +1,32 @@
 var express = require('express');
 var app = express();
+var session = require('express-session');
+
+
 
 app.set('port', (process.env.PORT || 5000));
 
-
+app.use(express.static(__dirname));
+// SESSION SETUP
+app.use(session(
+    {
+        secret: 'agileisawesome',
+        saveUninitialized: true,
+        resave: true
+    }
+));
 
 
 
 /*__________________________________________________*/
 //route files stored in ROUTES directory
 var indexRoute = require('./routes/index');
-var blogRoute = require('./routes/blog');
 app.use('/', indexRoute);
+
+var blogRoute = require('./routes/blog');
 app.use('/blog', blogRoute);
+
+
 
 
 /*__________________________________________________*/
@@ -22,17 +36,6 @@ app.set('view engine', 'ejs');
 
 
 
-/*__________________________________________________*/
-//page render files stored in VIEWS>PAGES directory
-//Index / Home page
-//app.get('/', function(req, res) {
-//  res.render('pages/index');
-//});
-
-//Blog page
-//app.get('/blog', function(req, res) {
-//  res.render('pages/blog');
-//});
 
 
 
