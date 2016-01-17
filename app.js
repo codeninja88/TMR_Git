@@ -1,7 +1,10 @@
 var express = require('express');
 var app = express();
 var session = require('express-session');
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded( {extended: true} ));
 
+app.locals.pretty = true; // makes sure code is readable in JS console
 
 
 app.set('port', (process.env.PORT || 5000));
@@ -15,6 +18,7 @@ app.use(session(
         resave: true
     }
 ));
+
 
 
 
