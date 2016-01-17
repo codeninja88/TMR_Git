@@ -2,7 +2,7 @@ var express = require('express');
 var loginRoute = express.Router();
 
 
-loginRoute.get('/login', function(req, res) {
+loginRoute.get('/', function(req, res) {
 
     res.render('pages/login');
 
