@@ -13,7 +13,7 @@ loginRoute.post('/', function(req, res) {
 
     if (req.body.username == 'test') {
         req.session.username = req.body.username;
-        res.render('pages/index');
+        res.render('pages/index', {username: req.session.username});
     } else {
         res.render('pages/blog');
     }
