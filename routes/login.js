@@ -10,8 +10,8 @@ loginRoute.get('/', function(req, res) {
 
 
 loginRoute.post('/', function(req, res) {
-    console.log(req.userLogin);
-    if (req.body.userLogin === 'test') {
+
+    if (req.userLogin !== 'test') {
         res.render('pages/index');
     } else {
         res.render('pages/blog');
