@@ -23,6 +23,9 @@ app.use(session(
 var indexRoute = require('./routes/index');
 app.use('/', indexRoute);
 
+var loginRoute = require('./routes/login');
+app.use('/login', loginRoute);
+
 var blogRoute = require('./routes/blog');
 app.use('/blog', blogRoute);
 
