@@ -2,9 +2,9 @@
   "name": "thematrixrecoded",
   "version": "0.0.1",
   "description": "The Matrix Recoded version created 2016",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "ejs": "2.3.3",
