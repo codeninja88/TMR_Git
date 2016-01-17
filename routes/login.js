@@ -11,7 +11,7 @@ loginRoute.get('/', function(req, res) {
 
 loginRoute.post('/', function(req, res) {
     console.log(req.userLogin);
-    if (req.userLogin == 'test') {
+    if (req.body.userLogin === 'test') {
         res.render('pages/index');
     } else {
         res.render('pages/blog');
